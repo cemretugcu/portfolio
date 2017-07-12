@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+          window.onload = function() {
+
+              // Get the element with id="defaultOpen" and click on it
+            var myDefaultBtn = document.getElementById("defaultOpen");
+            myDefaultBtn.click();
+          };
+        </script>
     <style>
       body {background-color:#050F28;}
            {font-family:"Lato", sans-serif;}
@@ -72,12 +80,13 @@ div.tab button.active {
       }
     </style>
   </head>
+
   <body>
     <h1>Welcome to my Portfolio!</h1>
     <a href="corefourreflection.html">Reflection Page for Core4 Topics!</a>
     <p>Look below for information on me and my past projects.</p>
     <div class="tab">
-         <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+         <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
          <button class="tablinks" onclick="openCity(event, 'Past Projects')">Past Projects</button>
     </div>
     
@@ -114,8 +123,6 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
 </script>                                
   
   
