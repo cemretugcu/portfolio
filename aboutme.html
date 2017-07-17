@@ -4,7 +4,6 @@
   <head>
     <script>
           window.onload = function() {
-
               // Get the element with id="defaultOpen" and click on it
             var myDefaultBtn = document.getElementById("defaultOpen");
             myDefaultBtn.click();
@@ -14,21 +13,14 @@
       .parallax {
     /* The image used */
     background-image: url("SucculentBlue.jpg");
-
     /* Set a specific height */
     min-height: 500px; 
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-      /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-
       a:visited {
         color: cornflowerblue;
       }
@@ -37,10 +29,9 @@
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: LemonChiffon;
+    background-color: #f1f1f1;
     text-align: center;
 }
-
 /* Style the buttons inside the tab */
 div.tab button {
     background-color: inherit;
@@ -53,17 +44,14 @@ div.tab button {
     font-size: 17px;
     text-align: center;
 }
-
 /* Change background color of buttons on hover */
 div.tab button:hover {
     background-color: aliceblue;
 }
-
 /* Create an active/current tablink class */
 div.tab button.active {
     background-color: cornflowerblue;
 }
-
 /* Style the tab content */
 .tabcontent {
     display: none;
@@ -71,14 +59,12 @@ div.tab button.active {
     border: 1px solid #ccc;
     border-top: none;
 }
-
 /* Style the close button */
 /*.topright {
     float: right;
     cursor: pointer;
     font-size: 20px; */
 }
-
 .topright:hover {color: #7392B7;}
       /*{font-family:"Lato", sans-serif;} */
       h1 {
@@ -95,10 +81,10 @@ div.tab button.active {
       }
       p {
         font-family:"Lato", sans-serif;
-        color:aquamarine;
+        color:#759EB8;
         font-size:100%;
         border-left:3px solid #7392B7;
-        background-color:lavender;
+        background-color:#373F51;
         padding:30px;
       }
  
@@ -146,7 +132,6 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
 </script>                                
   
   
