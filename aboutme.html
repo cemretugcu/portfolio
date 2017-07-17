@@ -11,11 +11,22 @@
           };
         </script>
     <style>
-      body {background-color:#050F28;}
-           {font-family:"Lato", sans-serif;}
+      .parallax {
+    /* The image used */
+    background-image: url("Sharks.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
       a:visited {
-        color: green;
+        color: white;
       }
       
 /* Style the tab */
@@ -94,7 +105,7 @@ div.tab button.active {
          <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
          <button class="tablinks" onclick="openCity(event, 'Past Projects')">Past Projects</button>
     </div>
-    
+    <div class="parallax"></div>
     <div id="About Me" class="tabcontent">
                                 <h3 >About Me!</h3>
                                 <img src="https://raw.githubusercontent.com/cemretugcu/portfolio/master/CemreProfilePic__Scuba.jpg" alt="Cemre Tugcu Profile Picture" width="640" height="640">
