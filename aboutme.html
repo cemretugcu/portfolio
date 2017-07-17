@@ -21,6 +21,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+      /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
       a:visited {
         color: cornflowerblue;
       }
@@ -29,7 +33,7 @@
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: LemonChiffon;
     text-align: center;
 }
 /* Style the buttons inside the tab */
@@ -81,10 +85,10 @@ div.tab button.active {
       }
       p {
         font-family:"Lato", sans-serif;
-        color:#759EB8;
+        color:aquamarine;
         font-size:100%;
         border-left:3px solid #7392B7;
-        background-color:#373F51;
+        background-color:lavender;
         padding:30px;
       }
  
